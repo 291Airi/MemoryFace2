@@ -10,9 +10,11 @@ import UIKit
 import RealmSwift
 import AssetsLibrary
 
-class SeaveViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class SeaveViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,UITextFieldDelegate{
+    
+    var personArray: [person] = []
 
-    var todoItem: Results<Todo>!
+    //var todoItem: Results<Todo>!
     var textFieldString = ""
     var hint1 = ""
     var hint2 = ""
@@ -34,62 +36,132 @@ class SeaveViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        do{
-            let realm = try Realm()
-            let realm1 = try Realm()
-            let realm2 = try Realm()
-            let realm3 = try Realm()
-//            todoItem = realm.objects(Todo.self)
-//            todoItem = realm1.objects(Todo.self)
-//            todoItem = realm2.objects(Todo.self)
-//            todoItem = realm3.objects(Todo.self)
-        }catch{
-            
+        
+        let realm = try! Realm()
+        let realm1 = try! Realm()
+        let realm2 = try! Realm()
+        let realm3 = try! Realm()
         }
         
-        // 画面が表示される際などにtableViewのデータを再読み込みする
-        func viewWillAppear(animated: Bool) {
-           super.viewWillAppear(animated)
-        }
+//        do{
+//            let realm = try Realm()
+//            let realm1 = try Realm()
+//            let realm2 = try Realm()
+//            let realm3 = try Realm()
+////            todoItem = realm.objects(objc.self)
+////            todoItem = realm1.objects(objc.self)
+////            todoItem = realm2.objects(objc.self)
+////            todoItem = realm3.objects(objc.self)
+//        }catch{
+//
+//        }
         
+//        // 画面が表示される際などにtableViewのデータを再読み込みする
+//        func viewWillAppear(animated: Bool) {
+//           super.viewWillAppear(animated)
+//        }
+//
+    
+    @IBAction func albumButton(_ sender: Any) {
+        //imagePickerCountrollerのインスタンスを作る
+        let imagePickerCountroller: UIImagePickerController = UIImagePickerController()
+        //フォットライブラリを使う設定をする
+        imagePickerCountroller.sourceType = UIImagePickerController.SourceType.photoLibrary
+        imagePickerCountroller.delegate = self
+        imagePickerCountroller.allowsEditing = true
+        //フォットライブラリを呼び出す
+        self.present(imagePickerCountroller, animated: true, completion: nil)
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        //string型に変換、保存
+        let Imageinfo = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        
+        //imageに選んだ画像を設定する
+        let image = info[.originalImage] as? UIImage
+        let imageUrl = info[UIImagePickerController.InfoKey.referenceURL] as? NSURL
+        URL = (imageUrl?.absoluteString)!
+        //imageをpictureImageViewに設定する
+        pictureImageView.image = image
+        //フォトライブラリを閉じる
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func saveButton(_ sender: Any) {
-        performSegue(withIdentifier: "modoru", sender: nil)
-        let newTodo = Todo()
-        // Realmのインスタンスを取得
-        realm = try! Realm()
-        realm1 = try! Realm()
-        realm2 = try! Realm()
-        realm3 = try! Realm()
-        //変数に入力内容を入れる
-        func addTodo(textFieldString: String) {
-            try! realm.write {
-                realm.add(Todo(value: ["textFieldString": textFieldString]))
-            }
+        //名前
+        let obj = Obj()
+        obj.textFieldString = nameTextField.text
+        
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(obj)
             print("名前",realm)
         }
-        func addTodo(hint1: String) {
-            try! realm1.write {
-                realm1.add(Todo(value: ["hint1": hint1]))
-            }
-            print("ヒント1",realm1)
+        
+        //ヒント１
+        obj.hint1 = hint1TextField.text
+        
+        let realm1 = try! Realm()
+        try! realm1.write {
+            realm1.add(obj)
+            print("名前",realm1)
         }
-        func addTodo(hint2: String) {
-            try! realm2.write {
-                realm2.add(Todo(value: ["hint2": hint2]))
-                
-            }
-            print("ヒント1",realm1)
+        
+        //ヒント2
+        obj.hint2 = hint2TextField.text
+        
+        let realm2 = try! Realm()
+        try! realm2.write {
+            realm2.add(obj)
+            print("名前",realm2)
         }
-        func addTodo(pictureurl: String) {
-            try! realm3.write {
-                realm3.add(Todo(value: ["pictureurl": pictureurl]))
-                
-            }
-            print("写真「",realm3)
+        
+        //画像
+        obj.pictureurl = URL
+        
+        let realm3 = try! Realm()
+        try! realm3.write {
+            realm3.add(obj)
+            print("名前",realm3)
         }
+        
+        
+        
+//        performSegue(withIdentifier: "modoru", sender: nil)
+//        let newTodo = Todo()
+//        // Realmのインスタンスを取得
+//        realm = try! Realm()
+//        realm1 = try! Realm()
+//        realm2 = try! Realm()
+//        realm3 = try! Realm()
+//        //変数に入力内容を入れる
+//        func addTodo(textFieldString: String) {
+//            try! realm.write {
+//                realm.add(Todo(value: ["textFieldString": textFieldString]))
+//            }
+//            print("名前",realm)
+//        }
+//        func addTodo(hint1: String) {
+//            try! realm1.write {
+//                realm1.add(Todo(value: ["hint1": hint1]))
+//            }
+//            print("ヒント1",realm1)
+//        }
+//        func addTodo(hint2: String) {
+//            try! realm2.write {
+//                realm2.add(Todo(value: ["hint2": hint2]))
+//
+//            }
+//            print("ヒント1",realm1)
+//        }
+//        func addTodo(pictureurl: String) {
+//            try! realm3.write {
+//                realm3.add(Todo(value: ["pictureurl": pictureurl]))
+//
+//            }
+//            print("写真「",realm3)
+//        }
         
         
 //        TodoKobetsunonakami.append(nameTextField.text!)
@@ -147,35 +219,11 @@ class SeaveViewController: UIViewController, UIImagePickerControllerDelegate, UI
         config.deleteRealmIfMigrationNeeded = true
         let realm = try! Realm(configuration: config)
     }
-    
-    @IBAction func albumButton(_ sender: Any) {
-        //imagePickerCountrollerのインスタンスを作る
-        let imagePickerCountroller: UIImagePickerController = UIImagePickerController()
-        //フォットライブラリを使う設定をする
-        imagePickerCountroller.sourceType = UIImagePickerController.SourceType.photoLibrary
-        imagePickerCountroller.delegate = self
-        imagePickerCountroller.allowsEditing = true
-        //フォットライブラリを呼び出す
-        self.present(imagePickerCountroller, animated: true, completion: nil)
-            }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
-        //string型に変換、保存
-        let Imageinfo = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-        
-        //imageに選んだ画像を設定する
-        let image = info[.originalImage] as? UIImage
-        let imageUrl = info[UIImagePickerController.InfoKey.referenceURL] as? NSURL
-        URL = (imageUrl?.absoluteString)!
-        //imageをpictureImageViewに設定する
-        pictureImageView.image = image
-        //フォトライブラリを閉じる
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    
+
 }
+    
+    
+
 
 
 

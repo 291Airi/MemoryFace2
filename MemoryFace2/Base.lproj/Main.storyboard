@@ -41,9 +41,6 @@
                                 <state key="normal" title="ヒント2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="hint2Button:" destination="1lS-Hj-4x2" eventType="touchUpInside" id="5HG-Tg-Drf"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6fq-Cy-gMQ">
                                 <rect key="frame" x="147" y="528" width="202" height="30"/>
@@ -68,9 +65,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="hint1Button:" destination="1lS-Hj-4x2" eventType="touchUpInside" id="wou-e0-l3W"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bED-H3-Jvz">
                                 <rect key="frame" x="162" y="750" width="91" height="48"/>
@@ -80,9 +74,6 @@
                                 <state key="normal" title="答える">
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="ansewrButton:" destination="1lS-Hj-4x2" eventType="touchUpInside" id="7Gs-U7-ngO"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXn-8D-VFh">
                                 <rect key="frame" x="212" y="694" width="182" height="48"/>
@@ -92,9 +83,6 @@
                                 <state key="normal" title="次の問題へ⇨">
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="nextquiz:" destination="1lS-Hj-4x2" eventType="touchUpInside" id="nSU-YW-0kI"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="この人誰だ？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHL-ws-pZg">
                                 <rect key="frame" x="20" y="92" width="351" height="42"/>
@@ -118,9 +106,6 @@
                                 <state key="normal" title="わからない…">
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="mistake:" destination="1lS-Hj-4x2" eventType="touchUpInside" id="McI-15-0QL"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mark_maru.png" translatesAutoresizingMaskIntoConstraints="NO" id="320-ox-QbC">
                                 <rect key="frame" x="20" y="309" width="374" height="279"/>
@@ -130,19 +115,6 @@
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="IAP-hF-vSu"/>
                     </view>
-                    <connections>
-                        <outlet property="ansewrButton" destination="bED-H3-Jvz" id="mgp-N0-JU6"/>
-                        <outlet property="answerLabel" destination="uHL-ws-pZg" id="egt-Ip-K2z"/>
-                        <outlet property="hint1Button" destination="f5a-Zb-qmM" id="6Ak-Il-YKC"/>
-                        <outlet property="hint2Button" destination="szX-Ku-cs5" id="x96-ic-23z"/>
-                        <outlet property="hintLabel" destination="mOl-4D-e2K" id="SR2-EV-dxh"/>
-                        <outlet property="image" destination="320-ox-QbC" id="3Xd-fB-ptx"/>
-                        <outlet property="mistake" destination="tq4-uW-YgZ" id="pJU-7c-jop"/>
-                        <outlet property="nameTextField1" destination="6fq-Cy-gMQ" id="fp9-Py-B0F"/>
-                        <outlet property="nextquiz" destination="WXn-8D-VFh" id="kSm-1k-OJc"/>
-                        <outlet property="pictureImageView1" destination="PfL-cQ-vb5" id="XhR-QL-Rlb"/>
-                        <segue destination="XEh-Bl-esJ" kind="show" identifier="" id="NoY-ga-6vy"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SwA-6y-6ce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -774,9 +746,6 @@
                                 <state key="normal" title="テスト">
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="1lS-Hj-4x2" kind="show" id="8kq-PP-zo5"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ry-vn-UIS">
                                 <rect key="frame" x="312" y="44" width="82" height="36"/>
@@ -989,9 +958,9 @@
         <image name="unnamed.png" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="080-iG-c3U"/>
-        <segue reference="1Wm-GE-R95"/>
-        <segue reference="CHe-0Q-Wec"/>
-        <segue reference="Bfo-qQ-m56"/>
+        <segue reference="2MH-Gn-KYj"/>
+        <segue reference="FOG-7H-nY7"/>
+        <segue reference="cKD-zX-ttJ"/>
+        <segue reference="Lga-om-Ca6"/>
     </inferredMetricsTieBreakers>
 </document>

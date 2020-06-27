@@ -16,6 +16,7 @@
 		41334E58240A12A50017C0E4 /* e0772_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 41334E57240A12A50017C0E4 /* e0772_2.png */; };
 		41334E5A240A16F40017C0E4 /* icon_74-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 41334E59240A16F40017C0E4 /* icon_74-1.png */; };
 		4157D1D0239B9BED00BE0979 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157D1CF239B9BED00BE0979 /* Todo.swift */; };
+		4165A30424A7550600CA39A9 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4165A30324A7550600CA39A9 /* PersonViewController.swift */; };
 		41B01F9323769A4300589178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B01F9223769A4300589178 /* AppDelegate.swift */; };
 		41B01F9523769A4300589178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B01F9423769A4300589178 /* ViewController.swift */; };
 		41B01F9823769A4300589178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B01F9623769A4300589178 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		41334E57240A12A50017C0E4 /* e0772_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e0772_2.png; sourceTree = "<group>"; };
 		41334E59240A16F40017C0E4 /* icon_74-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_74-1.png"; sourceTree = "<group>"; };
 		4157D1CF239B9BED00BE0979 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		4165A30324A7550600CA39A9 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		41B01F8F23769A4300589178 /* MemoryFace2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryFace2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B01F9223769A4300589178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41B01F9423769A4300589178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				41CE31C023EEF04D0046C108 /* ListViewCountroller.swift */,
 				41B01FC22376D12100589178 /* QuizViewController.swift */,
 				4157D1CF239B9BED00BE0979 /* Todo.swift */,
+				4165A30324A7550600CA39A9 /* PersonViewController.swift */,
 			);
 			path = MemoryFace2;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				4157D1D0239B9BED00BE0979 /* Todo.swift in Sources */,
 				41B01F9523769A4300589178 /* ViewController.swift in Sources */,
 				41CE31C123EEF04D0046C108 /* ListViewCountroller.swift in Sources */,
+				4165A30424A7550600CA39A9 /* PersonViewController.swift in Sources */,
 				4124C038241B9662006EF151 /* MenuViewController.swift in Sources */,
 				41B01F9323769A4300589178 /* AppDelegate.swift in Sources */,
 				41B01FC123769A6800589178 /* SeaveViewController.swift in Sources */,

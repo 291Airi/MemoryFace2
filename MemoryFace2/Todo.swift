@@ -6,13 +6,18 @@
 //  Copyright © 2019 福井　愛梨. All rights reserved.
 //
 
+import UIKit
 import Foundation
 import RealmSwift
 
-class Todo: Object {
-    @objc dynamic var textFieldString = ""
-    @objc dynamic var hint1 = ""
-    @objc dynamic var hint2 = ""
-    @objc dynamic var pictureurl = ""
+class Obj: Object{
+//    @objc dynamic var textFieldString = ""
+//    @objc dynamic var hint1 = ""
+//    @objc dynamic var hint2 = ""
+//    @objc dynamic var pictureurl = ""
+     @objc dynamic var textFieldString: String?
+     @objc dynamic var hint1: String?
+     @objc dynamic var hint2: String?
+     @objc dynamic var pictureurl: String?
     }
 
