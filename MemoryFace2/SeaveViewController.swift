@@ -28,7 +28,6 @@ class SeaveViewController: UIViewController, UIImagePickerControllerDelegate, UI
     private var realm2: Realm!
     private var realm3: Realm!
     
-    @IBOutlet weak var kuma: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var hint1TextField: UITextField!
     @IBOutlet weak var hint2TextField: UITextField!
