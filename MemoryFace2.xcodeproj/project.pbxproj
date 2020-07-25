@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		1B2DA5E1E1E673650F0B053A /* Pods_MemoryFace2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA2CE48C62D85B353AD5AD /* Pods_MemoryFace2.framework */; };
 		41180CDA23AE1C1200AB280C /* nigaoe_oda_nobunaga.png in Resources */ = {isa = PBXBuildFile; fileRef = 41180CD923AE1C1200AB280C /* nigaoe_oda_nobunaga.png */; };
-		4124C038241B9662006EF151 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4124C037241B9662006EF151 /* MenuViewController.swift */; };
 		41334E422409DFDB0017C0E4 /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = 41334E412409DFDB0017C0E4 /* unnamed.png */; };
 		41334E4C2409F61E0017C0E4 /* icon_74-1 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 41334E4B2409F61D0017C0E4 /* icon_74-1 (1).png */; };
 		41334E4E2409F64F0017C0E4 /* icon_74-1 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 41334E4D2409F64E0017C0E4 /* icon_74-1 (2).png */; };
 		41334E58240A12A50017C0E4 /* e0772_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 41334E57240A12A50017C0E4 /* e0772_2.png */; };
 		41334E5A240A16F40017C0E4 /* icon_74-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 41334E59240A16F40017C0E4 /* icon_74-1.png */; };
 		4157D1D0239B9BED00BE0979 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157D1CF239B9BED00BE0979 /* Todo.swift */; };
-		4165A30424A7550600CA39A9 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4165A30324A7550600CA39A9 /* PersonViewController.swift */; };
 		41B01F9323769A4300589178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B01F9223769A4300589178 /* AppDelegate.swift */; };
 		41B01F9523769A4300589178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B01F9423769A4300589178 /* ViewController.swift */; };
 		41B01F9823769A4300589178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B01F9623769A4300589178 /* Main.storyboard */; };
@@ -28,7 +26,8 @@
 		41B01FC32376D12100589178 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B01FC22376D12100589178 /* QuizViewController.swift */; };
 		41B01FC72376D49900589178 /* mark_maru.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B01FC52376D49900589178 /* mark_maru.png */; };
 		41B01FC82376D49900589178 /* mark_batsu.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B01FC62376D49900589178 /* mark_batsu.png */; };
-		41CE31C123EEF04D0046C108 /* ListViewCountroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE31C023EEF04D0046C108 /* ListViewCountroller.swift */; };
+		41C7D28324CC1BCF00748918 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C7D28224CC1BCF00748918 /* TestViewController.swift */; };
+		41FB4B8224C0772900B3489B /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB4B8124C0772900B3489B /* ChoiceViewController.swift */; };
 		41FCF6D72418CFCB00BEE2E4 /* seikai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41FCF6D52418CFCB00BEE2E4 /* seikai.mp3 */; };
 		41FCF6D82418CFCB00BEE2E4 /* hazure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41FCF6D62418CFCB00BEE2E4 /* hazure.mp3 */; };
 /* End PBXBuildFile section */
@@ -52,14 +51,12 @@
 
 /* Begin PBXFileReference section */
 		41180CD923AE1C1200AB280C /* nigaoe_oda_nobunaga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigaoe_oda_nobunaga.png; sourceTree = "<group>"; };
-		4124C037241B9662006EF151 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		41334E412409DFDB0017C0E4 /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unnamed.png; sourceTree = "<group>"; };
 		41334E4B2409F61D0017C0E4 /* icon_74-1 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_74-1 (1).png"; sourceTree = "<group>"; };
 		41334E4D2409F64E0017C0E4 /* icon_74-1 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_74-1 (2).png"; sourceTree = "<group>"; };
 		41334E57240A12A50017C0E4 /* e0772_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e0772_2.png; sourceTree = "<group>"; };
 		41334E59240A16F40017C0E4 /* icon_74-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_74-1.png"; sourceTree = "<group>"; };
 		4157D1CF239B9BED00BE0979 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		4165A30324A7550600CA39A9 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		41B01F8F23769A4300589178 /* MemoryFace2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryFace2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B01F9223769A4300589178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41B01F9423769A4300589178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +74,8 @@
 		41B01FC22376D12100589178 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		41B01FC52376D49900589178 /* mark_maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_maru.png; sourceTree = "<group>"; };
 		41B01FC62376D49900589178 /* mark_batsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_batsu.png; sourceTree = "<group>"; };
-		41CE31C023EEF04D0046C108 /* ListViewCountroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCountroller.swift; sourceTree = "<group>"; };
+		41C7D28224CC1BCF00748918 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		41FB4B8124C0772900B3489B /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
 		41FCF6D52418CFCB00BEE2E4 /* seikai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = seikai.mp3; sourceTree = "<group>"; };
 		41FCF6D62418CFCB00BEE2E4 /* hazure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hazure.mp3; sourceTree = "<group>"; };
 		4BDA2CE48C62D85B353AD5AD /* Pods_MemoryFace2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryFace2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,11 +151,10 @@
 				41B01F9B23769A4700589178 /* LaunchScreen.storyboard */,
 				41B01F9E23769A4700589178 /* Info.plist */,
 				41B01FC023769A6800589178 /* SeaveViewController.swift */,
-				4124C037241B9662006EF151 /* MenuViewController.swift */,
-				41CE31C023EEF04D0046C108 /* ListViewCountroller.swift */,
+				41C7D28224CC1BCF00748918 /* TestViewController.swift */,
+				41FB4B8124C0772900B3489B /* ChoiceViewController.swift */,
 				41B01FC22376D12100589178 /* QuizViewController.swift */,
 				4157D1CF239B9BED00BE0979 /* Todo.swift */,
-				4165A30324A7550600CA39A9 /* PersonViewController.swift */,
 			);
 			path = MemoryFace2;
 			sourceTree = "<group>";
@@ -390,14 +387,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C7D28324CC1BCF00748918 /* TestViewController.swift in Sources */,
 				4157D1D0239B9BED00BE0979 /* Todo.swift in Sources */,
 				41B01F9523769A4300589178 /* ViewController.swift in Sources */,
-				41CE31C123EEF04D0046C108 /* ListViewCountroller.swift in Sources */,
-				4165A30424A7550600CA39A9 /* PersonViewController.swift in Sources */,
-				4124C038241B9662006EF151 /* MenuViewController.swift in Sources */,
 				41B01F9323769A4300589178 /* AppDelegate.swift in Sources */,
 				41B01FC123769A6800589178 /* SeaveViewController.swift in Sources */,
 				41B01FC32376D12100589178 /* QuizViewController.swift in Sources */,
+				41FB4B8224C0772900B3489B /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

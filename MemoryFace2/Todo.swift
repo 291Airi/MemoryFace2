@@ -11,10 +11,6 @@ import Foundation
 import RealmSwift
 
 class Obj: Object{
-//    @objc dynamic var textFieldString = ""
-//    @objc dynamic var hint1 = ""
-//    @objc dynamic var hint2 = ""
-//    @objc dynamic var pictureurl = ""
      @objc dynamic var textFieldString: String?
      @objc dynamic var hint1: String?
      @objc dynamic var hint2: String?

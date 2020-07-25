@@ -23,15 +23,11 @@
 //    @IBOutlet weak var ansewrButton: UIButton!
 //    @IBOutlet weak var mistake: UIButton!
 //
-//    var todoItem: Results<Todo>!
+//    var todoItem: Results<Object>!
 //    var audioPlayer: AVAudioPlayer!
 //    var timer: Timer!
 //    var timer1: Timer!
 //    var textFieldString = ""
-////    var TodoKobetsunonakami = [String]()//名前
-////    var TodoKobetsunonakami1 = [String]()//ヒント１
-////    var TodoKobetsunonakami2 = [String]()//ヒント２
-////    var TodoKobetsunonakami3 = [String]()//画像
 //    private var realm: Realm!//名前
 //    private var realm1: Realm!//ヒント１
 //    private var realm2: Realm!//ヒント２
@@ -167,7 +163,7 @@
 //        realm1 = try! Realm()
 //        realm2 = try! Realm()
 //        realm3 = try! Realm()
-//        let todo = realm.objects(Todo.self)
+//        let todo = realm.objects(Object.self)
 //        //super.viewDidLoad()
 //        hint1Button.isHidden = false
 //        hint2Button.isHidden = false

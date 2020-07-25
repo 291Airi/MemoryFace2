@@ -11,22 +11,25 @@ import RealmSwift
 import AssetsLibrary
 
 class SeaveViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,UITextFieldDelegate{
-    
-    var personArray: [person] = []
 
     //var todoItem: Results<Todo>!
+    
+    class personArray: Object{
+        @objc dynamic var textFieldString: String = ""
+        @objc dynamic var hint1: String = ""
+        @objc dynamic var hint2: String = ""
+        @objc dynamic var pictureurl: String = ""
+    }
+    
     var textFieldString = ""
     var hint1 = ""
     var hint2 = ""
     var  URL = ""
-//    var TodoKobetsunonakami = [String]()
-//    var TodoKobetsunonakami1 = [String]()
-//    var TodoKobetsunonakami2 = [String]()
-//    var TodoKobetsunonakami3 = [String]()
-    private var realm: Realm!
-    private var realm1: Realm!
-    private var realm2: Realm!
-    private var realm3: Realm!
+    private var realm: Realm!//person
+//    private var realm1: Realm!
+//    private var realm2: Realm!
+//    private var realm3: Realm!
+//    private var realm4: Realm!
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var hint1TextField: UITextField!
@@ -35,31 +38,9 @@ class SeaveViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("あiu")
         
-        let realm = try! Realm()
-        let realm1 = try! Realm()
-        let realm2 = try! Realm()
-        let realm3 = try! Realm()
         }
-        
-//        do{
-//            let realm = try Realm()
-//            let realm1 = try Realm()
-//            let realm2 = try Realm()
-//            let realm3 = try Realm()
-////            todoItem = realm.objects(objc.self)
-////            todoItem = realm1.objects(objc.self)
-////            todoItem = realm2.objects(objc.self)
-////            todoItem = realm3.objects(objc.self)
-//        }catch{
-//
-//        }
-        
-//        // 画面が表示される際などにtableViewのデータを再読み込みする
-//        func viewWillAppear(animated: Bool) {
-//           super.viewWillAppear(animated)
-//        }
-//
     
     @IBAction func albumButton(_ sender: Any) {
         //imagePickerCountrollerのインスタンスを作る
@@ -88,114 +69,74 @@ class SeaveViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     
     @IBAction func saveButton(_ sender: Any) {
-        //名前
-        let obj = Obj()
-        obj.textFieldString = nameTextField.text
+        print("たちつ")
+        let person1 = personArray()
+         print("さいす")
+        person1.textFieldString = nameTextField.text!
+         print("さいす")
+        person1.hint1  = hint1TextField.text!
+         print("さいす")
+        person1.hint2 = hint2TextField.text!
+         print("さいす")
+        person1.pictureurl = URL
+        print("さいす")
+        print("person1,textFieldString",person1.textFieldString)
+        print("person1,hint1",person1.hint1)
+        print("person1,hint2",person1.hint2)
+        print("person1,pictureurl",person1.pictureurl)
         
+        
+        //personを格納するリストの作成
+        let persons = List<personArray>()
+        persons.append(person1)
+        print("person1",persons)
+        
+        // Realmのインスタンスを生成する
         let realm = try! Realm()
+        
+        // 書き込みトランザクション内でデータを追加する
         try! realm.write {
-            realm.add(obj)
-            print("名前",realm)
+            realm.add(persons)
         }
-        
-        //ヒント１
-        obj.hint1 = hint1TextField.text
-        
-        let realm1 = try! Realm()
-        try! realm1.write {
-            realm1.add(obj)
-            print("名前",realm1)
-        }
-        
-        //ヒント2
-        obj.hint2 = hint2TextField.text
-        
-        let realm2 = try! Realm()
-        try! realm2.write {
-            realm2.add(obj)
-            print("名前",realm2)
-        }
-        
-        //画像
-        obj.pictureurl = URL
-        
-        let realm3 = try! Realm()
-        try! realm3.write {
-            realm3.add(obj)
-            print("名前",realm3)
-        }
-        
-        
-        
-//        performSegue(withIdentifier: "modoru", sender: nil)
-//        let newTodo = Todo()
-//        // Realmのインスタンスを取得
-//        realm = try! Realm()
-//        realm1 = try! Realm()
-//        realm2 = try! Realm()
-//        realm3 = try! Realm()
-//        //変数に入力内容を入れる
-//        func addTodo(textFieldString: String) {
-//            try! realm.write {
-//                realm.add(Todo(value: ["textFieldString": textFieldString]))
-//            }
-//            print("名前",realm)
-//        }
-//        func addTodo(hint1: String) {
-//            try! realm1.write {
-//                realm1.add(Todo(value: ["hint1": hint1]))
-//            }
-//            print("ヒント1",realm1)
-//        }
-//        func addTodo(hint2: String) {
-//            try! realm2.write {
-//                realm2.add(Todo(value: ["hint2": hint2]))
-//
-//            }
-//            print("ヒント1",realm1)
-//        }
-//        func addTodo(pictureurl: String) {
-//            try! realm3.write {
-//                realm3.add(Todo(value: ["pictureurl": pictureurl]))
-//
-//            }
-//            print("写真「",realm3)
-//        }
-        
-        
-//        TodoKobetsunonakami.append(nameTextField.text!)
-//        UserDefaults.standard.set( TodoKobetsunonakami, forKey: "TodoList" )
-//        TodoKobetsunonakami1.append(hint1TextField.text!)
-//        UserDefaults.standard.set( TodoKobetsunonakami1, forKey: "TodoList1" )
-//        TodoKobetsunonakami2.append(hint2TextField.text!)
-//         UserDefaults.standard.set( TodoKobetsunonakami2, forKey: "TodoList2" )
-//
-//        TodoKobetsunonakami3.append(URL)
-//        UserDefaults.standard.set( TodoKobetsunonakami3, forKey: "TodoList3" )
-//        print("TodoKobetsunonakami",TodoKobetsunonakami)
-//        print("TodoKobetsunonakami1",TodoKobetsunonakami1)
-//        print("TodoKobetsunonakami2",TodoKobetsunonakami2)
-//        print("TodoKobetsunonakami3",TodoKobetsunonakami3)
-//        //realmに入れる
-//        let Realm  = TodoKobetsunonakami//名前
-//        let Realm1  = TodoKobetsunonakami1//ヒント１
-//        let Realm2  = TodoKobetsunonakami2//ヒント２
-//        let Realm3  = TodoKobetsunonakami3//画像
-//        print("URL", TodoKobetsunonakami3)
-//        // 上記で代入したテキストデータを永続化するための処理
-//        try! realm.write() {
-//            realm.add(newTodo)
-//        }
-//        try! realm1.write() {
-//            realm.add(newTodo)
-//        }
-//        try! realm2.write() {
-//            realm.add(newTodo)
-//        }
-//        try! realm3.write() {
-//            realm.add(newTodo)
-//        }
     }
+        
+//        //名前
+//        let obj = Obj()
+//        obj.textFieldString = nameTextField.text
+//
+//        let realm1 = try! Realm()
+//        try! realm1.write {
+//            realm1.add(obj)
+//            print("名前",realm1)
+//        }
+//
+//        //ヒント１
+//        obj.hint1 = hint1TextField.text
+//
+//        let realm2 = try! Realm()
+//        try! realm2.write {
+//            realm2.add(obj)
+//            print("名前",realm2)
+//        }
+//
+//        //ヒント2
+//        obj.hint2 = hint2TextField.text
+//
+//        let realm3 = try! Realm()
+//        try! realm3.write {
+//            realm3.add(obj)
+//            print("名前",realm3)
+//        }
+//
+//        //画像
+//        obj.pictureurl = URL
+//
+//        let realm4 = try! Realm()
+//        try! realm4.write {
+//            realm4.add(obj)
+//            print("名前",realm4)
+//        }
+    
     
     @IBAction func erase(_ sender: Any) {
         let alert: UIAlertController = UIAlertController(title: "アラート表示", message: "全データを消去していいですか？", preferredStyle:  UIAlertController.Style.alert)
