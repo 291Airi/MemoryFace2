@@ -403,22 +403,29 @@
                                 <state key="normal" title="戻る">
                                     <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XEh-Bl-esJ" kind="show" id="kZh-x3-Lva"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkU-Yl-23K">
-                                <rect key="frame" x="329" y="616" width="42" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkU-Yl-23K">
+                                <rect key="frame" x="283" y="616" width="42" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="→">
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0Wp-bG-2Qb" kind="show" id="gHD-eu-pQe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-R1-hhX">
-                                <rect key="frame" x="57" y="616" width="42" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-R1-hhX">
+                                <rect key="frame" x="50" y="616" width="42" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="←">
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XzC-5t-qOx" kind="show" id="o3s-eB-gZy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKa-Wh-ItN">
                                 <rect key="frame" x="340" y="70" width="31" height="30"/>
@@ -500,7 +507,9 @@
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eFL-r0-c6z" firstAttribute="top" secondItem="Y0R-Rl-ArU" secondAttribute="bottom" id="JXf-CV-uGz"/>
+                            <constraint firstItem="UWM-R1-hhX" firstAttribute="leading" secondItem="h0s-lD-Sq9" secondAttribute="leading" constant="50" id="VsF-v8-Uqw"/>
                             <constraint firstItem="zRS-hc-j2A" firstAttribute="top" secondItem="h0s-lD-Sq9" secondAttribute="top" constant="2" id="cPC-uc-9fh"/>
+                            <constraint firstItem="h0s-lD-Sq9" firstAttribute="trailing" secondItem="bkU-Yl-23K" secondAttribute="trailing" constant="50" id="ex6-cI-Tt3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h0s-lD-Sq9"/>
                     </view>
@@ -531,14 +540,19 @@
                                 <state key="normal" title="戻る">
                                     <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XEh-Bl-esJ" kind="show" id="L9A-ur-qF0"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11n-rS-wZo">
-                                <rect key="frame" x="325" y="611" width="42" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11n-rS-wZo">
+                                <rect key="frame" x="283" y="611" width="42" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="→">
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="94n-VK-FEE" kind="show" id="hjt-MT-6Pt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgS-fe-Ntj">
                                 <rect key="frame" x="109" y="381" width="201" height="50"/>
@@ -582,9 +596,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfZ-Gj-h2R">
+                                <rect key="frame" x="50" y="600" width="42" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="←">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Avl-7E-9Oh" kind="show" id="aHq-yp-hcZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="jfZ-Gj-h2R" firstAttribute="leading" secondItem="cyR-F0-a9p" secondAttribute="leading" constant="50" id="XRh-lc-TsV"/>
+                            <constraint firstItem="cyR-F0-a9p" firstAttribute="trailing" secondItem="11n-rS-wZo" secondAttribute="trailing" constant="50" id="de7-Sh-ZZS"/>
                             <constraint firstItem="W6i-mP-iq6" firstAttribute="top" secondItem="cyR-F0-a9p" secondAttribute="top" constant="2" id="gsV-3N-3rn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cyR-F0-a9p"/>
@@ -697,6 +723,9 @@
                                 <state key="normal" title="←">
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0Wp-bG-2Qb" kind="show" id="mM8-36-HHn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-j1-fu1">
                                 <rect key="frame" x="176" y="622" width="61" height="48"/>
@@ -732,7 +761,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9O-FA-SJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2644.9275362318845" y="-609.375"/>
+            <point key="canvasLocation" x="2644" y="-609.60591133004925"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sB3-Ln-mJm">
@@ -804,11 +833,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDt-AL-1be">
-                                <rect key="frame" x="16" y="686" width="151" height="80"/>
+                                <rect key="frame" x="112" y="698" width="151" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="左">
+                                <state key="normal" title="あ">
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -987,16 +1016,6 @@
                     <view key="view" contentMode="scaleToFill" id="PEP-Jb-euz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUv-Aj-VN6">
-                                <rect key="frame" x="164" y="372" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="button:" destination="vEG-kk-gty" eventType="touchUpInside" id="82K-Mr-3dx"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="68c-AZ-Xyf"/>
                     </view>
@@ -1013,7 +1032,10 @@
         <image name="nigaoe_oda_nobunaga.png" width="180" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="080-iG-c3U"/>
+        <segue reference="Rtl-MF-gjc"/>
+        <segue reference="gHD-eu-pQe"/>
+        <segue reference="aHq-yp-hcZ"/>
+        <segue reference="CHe-0Q-Wec"/>
         <segue reference="Bfo-qQ-m56"/>
     </inferredMetricsTieBreakers>
 </document>
